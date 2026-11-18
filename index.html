@@ -645,6 +645,21 @@ textarea{width:100%;min-height:64px;border:1px solid var(--line2);border-radius:
 .feed li{position:relative}
 .lenta-b{margin-top:2px}
 
+
+.lenta{margin-top:18px}
+.lnt{list-style:none;margin:0;padding:0}
+.lnt-i{padding:12px 16px;border-top:1px solid var(--line);display:grid;gap:6px}
+.lnt-h{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.lnt-h .ic{width:18px;height:18px;color:var(--copper-ink)}
+.lnt-h .lenta-b{margin-left:auto}
+.lnt-tx{white-space:pre-wrap;overflow-wrap:anywhere;color:var(--ink);max-height:9.5em;overflow:hidden;line-height:1.45}
+.lnt-img{max-width:min(360px,100%);border-radius:8px;border:1px solid var(--line)}
+.lnt-f{font-size:14px}
+
+
+.fresh,.fresh-big{white-space:normal;overflow-wrap:anywhere;max-width:100%}
+@media (max-width:760px){.ph{flex-wrap:wrap}.wt .src{overflow-wrap:anywhere}.lnt-h .lenta-b{margin-left:0}}
+
 /* ===== вход ===== */
 #vhod{min-height:100vh;display:grid;place-items:center;padding:24px 16px;background:var(--bg)}
 #vhod .vh-k{width:100%;max-width:360px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:28px 24px}
@@ -657,6 +672,9 @@ textarea{width:100%;min-height:64px;border:1px solid var(--line2);border-radius:
 #vhod button:disabled{opacity:.6;cursor:wait}
 #vhod .vh-osh{min-height:20px;margin-top:12px;font:14px var(--body);color:var(--bad);text-align:center}
 #prilozhenie[hidden]{display:none}
+#vhod .vh-zap{display:flex;align-items:center;gap:8px;margin:14px 0 0;color:var(--ink2)}
+#vhod .vh-zap input{width:auto;margin:0}
+#vhod.zhdu .vh-k{opacity:.5;pointer-events:none}
 </style>
 </head>
 <body>
@@ -668,6 +686,7 @@ textarea{width:100%;min-height:64px;border:1px solid var(--line2);border-radius:
     <input id="vh-login" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" required>
     <label for="vh-parol">Пароль</label>
     <input id="vh-parol" name="password" type="password" autocomplete="current-password" required>
+    <label class="vh-zap"><input id="vh-zapomnit" type="checkbox" checked> Запомнить на этом устройстве</label>
     <button id="vh-knopka" type="submit">Войти</button>
     <div class="vh-osh" id="vh-osh" role="alert"></div>
   </form>
