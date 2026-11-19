@@ -752,6 +752,29 @@ body.noscroll{overflow:hidden}
 .inb2-prev:hover,.fc-prev:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(26,26,26,.15)}
 @media (max-width:560px){.thumb.lg{width:96px;height:128px}}
 
+.pl{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--info);border-radius:12px;padding:12px 14px}
+.pl.bad{border-left-color:var(--bad)} .pl.warn{border-left-color:var(--copper)} .pl.ok{border-left-color:var(--ok)}
+.pl-h{display:flex;gap:12px}
+.pl-b{min-width:0;flex:1}
+.pl-k{font-size:11.5px;color:var(--muted);font-weight:700;letter-spacing:.04em}
+.pl h3{margin:2px 0 6px;font-size:16px}
+.pl-m{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px}
+.pl-act{display:flex;flex-wrap:wrap;gap:6px}
+.pl-open{margin-top:12px;border-top:1px solid var(--line);padding-top:12px}
+.pl-send{background:var(--copper-soft);border-radius:10px;padding:10px 12px;margin-bottom:12px}
+.pl-send textarea{width:100%;box-sizing:border-box;margin:6px 0 8px;border:1px solid var(--line2);border-radius:8px;padding:8px 10px;background:var(--surface);font:14px/1.45 var(--body);resize:vertical}
+.pl-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.pl-row select{border:1px solid var(--line2);border-radius:7px;padding:5px 8px;background:var(--surface);max-width:100%}
+.pl-hh{margin:6px 0 8px;font-size:14px}
+.pl-ev{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.pl-ev li{display:flex;gap:10px;align-items:flex-start}
+.pl-ic{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;flex:none;font-weight:700;font-size:13px}
+.pl-ic svg{width:14px;height:14px}
+.pl-ic.sob{background:var(--info-bg);color:var(--info)} .pl-ic.otpr{background:var(--ok-bg);color:var(--ok)} .pl-ic.korr{background:var(--warn-bg);color:var(--warn)}
+.pl-t{font-size:13px;color:var(--ink2);white-space:pre-wrap;margin-top:3px;overflow-wrap:anywhere}
+.pl-f{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
+.chip.hot{border-color:var(--bad);color:var(--bad);font-weight:700}
+
 /* ===== вход ===== */
 #vhod{min-height:100vh;display:grid;place-items:center;padding:24px 16px;background:var(--bg)}
 #vhod .vh-k{width:100%;max-width:360px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:28px 24px}
